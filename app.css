@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+}
+
+body{
+  background-color: rgb(207, 236, 222);
+}
+
+.wrapper {
+  width: 90%;
+  margin:0 auto;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.8em;
+  font-size: 32px;
+}
+
+
+/* FORM */
+
+h4 {
+  font-size: 20px;
+  margin: 10px 20px 0;
+}
+
+.fa{
+  margin: 4px;
+}
+
+.fa-user{
+  font-size: 25px;
+}
+
+.fa-envelope {
+  position: relative;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+input .name{
+  margin-right: 20px;
+}
+
+.input-box label span i::before{
+  margin: 8px;
+  font-size: 20px;
+}
+
+.input-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 3px;
+  width: 100%;
+}
+
+.input-box h4{
+  margin: 10px;
+  width: 100%;
+} 
+
+input[type="text"],input[type="email"],input[type="tel"]{
+  width: max-content;
+  height: 35px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 7px;
+  border: 0.5px solid lightgrey;
+  margin: 8px 5px 0 5px;
+}
+
+.input-box .radio{
+  margin: 10px;
+}
+
+.input-box label{
+  margin-right: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+select{
+  margin: 8px 10px;
+  height: 35px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 7px;
+  border: 0.5px solid lightgrey;
+}
+
+/* Pay Now Button */
+
+button {
+  background-color: #e7332b;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 7px 5px;
+  font-size: 18px;
+  border: transparent;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #445cac;
+}
+
+@media  screen and (max-width:768px) {
+  .wrapper{
+    width: 100%
+  }
+}
+
+@media  screen and (max-width:722px) {
+  .form{
+    width: 100%
+  }
+
+  input[type="text"]{
+    width: 25%;
+  }
+
+  .input-box{
+    flex-wrap: wrap;
+  }
+}
+
+@media  screen and (max-width:658px) {
+  input[type="text"]{
+    width: 28%;
+  }
+}
+
+@media screen and (max-width:450px){
+  input[type="text"]{
+    width: 45%;
+    flex-wrap: wrap;
+  }
+
+  .input-box{
+    flex-wrap: wrap;
+  }
+  
+}
